@@ -1,0 +1,9 @@
+name: abcd
+on:
+  discussion:
+    types:
+    - created
+jobs:
+  job1:
+    steps:
+    - run: echo "hi hello"
