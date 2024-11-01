@@ -1,6 +1,6 @@
 name: abcd
 on:
-  discussion:
+  discussion_comment:
     types:
     - created
 jobs:
