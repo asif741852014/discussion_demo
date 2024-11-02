@@ -1,8 +1,11 @@
-name: abcd
+name: Pull Request Workflow
+
 on:
-  gollum:
+  issue_comment: # Triggers on pull requests targeting the main branch
+
 jobs:
-  job1:
+  build-and-test:
     runs-on: ubuntu-latest
+
     steps:
-    - run: echo "hi hello gollum"
+    - run: echo "hi from pull_request"
