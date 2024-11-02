@@ -1,12 +1,12 @@
 name: Pull Request Workflow
 
 on:
-  label:
-    types: ["created"]
+  milestone:
+    types: [created]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "hi from label"
+    - run: echo "hi from milestone"
