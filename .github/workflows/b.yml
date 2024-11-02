@@ -1,11 +1,12 @@
 name: Pull Request Workflow
 
 on:
-  issue_comment: # Triggers on pull requests targeting the main branch
+  issues:
+    types: ["opened"]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "hi from pull_request"
+    - run: echo "hi from issues"
