@@ -1,0 +1,8 @@
+name: abcd
+on:
+  fork:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hi hello fork"
