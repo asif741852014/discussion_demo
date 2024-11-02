@@ -1,8 +1,8 @@
 name: abcd
 on:
-  fork:
+  gollum:
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "hi hello fork"
+    - run: echo "hi hello gollum"
